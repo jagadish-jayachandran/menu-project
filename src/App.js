@@ -21,7 +21,7 @@ class App extends Component {
         <Navbar dark color="primary">
           <div className="container">
             <NavbarBrand href="/">
-              Jagadish Jayachandran
+              Canteen Dishes
            {/* <img src={logo} alt="Logo" />; */}
          </NavbarBrand>
           </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Card, CardImg, CardImgOverlay, CardText, CardBody,
+  Card, CardImg, CardImgOverlay,
   CardTitle
 } from 'reactstrap';
 
@@ -14,10 +14,34 @@ class Menu extends Component {
       selectedDish: null,
       coments: [{
         id:0,
-        comment: 'welcome reat js',
-        name: 'jagadish',
+        comment: 'Imagine all eatables, living in confusion! ',
+        name: 'john lemon',
         date: 'oct 17 2012'
-      }]
+      },
+        {
+          id: 1,
+          comment: 'Sends anyone to heaven, i wish i could get my mother-in-law to eat it!.',
+          name: 'Paul McVites',
+          date: 'sept 06 2014'
+        },
+        {
+          id: 2,
+          comment: 'eat it ! just eat it. ',
+          name: 'Michael jacklson',
+          date: 'feb 14 2015'
+        },
+        {
+          id: 3,
+          comment: 'Ultimate reaching for stars!',
+          name: 'jRingo starry',
+          date: 'dec 03 2013'
+        },
+        {
+          id: 4,
+          comment: 'Its your birthday, we are gonna party.',
+          name: '25 cent',
+          date: 'dec 03 2011'
+        }]
     };
   }
   onDishSelect(dish) {
@@ -62,16 +86,16 @@ class Menu extends Component {
         <div className="row">
           {menu}
         </div>
-        <div className="row">
-          <div className="col-12 col-md-5 m-1">
-            <DishDetail dish={this.state.selectedDish} />
-            {/* {this.renderDish(this.state.selectedDish)} */}
-          </div>
-          <div className="col-12 col-md-5 m-1">
-            <DishDetailView comments={this.state.coments}/>
+        <div >
+         
+          <DishDetail dish={this.state.selectedDish} comments={this.state.coments}/>
+            {/* {this.renderDish(this.state.selectedDish) } */}
+          {/* </div> */}
+          {/* <div className="col-12 col-md-5 m-1"> */}
+            {/* <DishDetailView comments={this.state.coments}/> */}
            
             {/* {this.renderComments(this.state.coments)} */}
-          </div>
+          {/* </div> */}
 
         </div>
       </div>

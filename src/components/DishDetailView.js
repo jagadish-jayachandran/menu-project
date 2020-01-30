@@ -6,10 +6,6 @@ import React, { Component } from 'react';
 
 
 class DishDetailView extends Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
     const com = this.props.comments.map((comt) => {
